@@ -22,6 +22,7 @@ export default {
 
         colors:{
             verdeBotones:'#B0D892',
+            azulBotones:'#6096BA',
         }
     },
 

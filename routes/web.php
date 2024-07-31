@@ -27,6 +27,15 @@ require __DIR__.'/auth.php';
 Route::get('/user', [ContadorController::class, 'UserIndex'])->name('user');
 Route::get('/user/contador', [ContadorController::class, 'ContadorIndex'])->name('contador');
 Route::get('/user/contador/agregar', [ContadorController::class, 'AgregarIndex'])->name('contador');
+Route::get('/user/contador/mostrar', [ContadorController::class, 'MostrarShow'])->name('contador');
+
+
+Route::get('/user/historial', [ContadorController::class, 'HistorialIndex'])->name('contador');
+
+Route::get('/user/presupuesto', [ContadorController::class, 'PresupuestoIndex'])->name('contador');
+
+
+
 
 Route::middleware('guest:admin')->group(function () {
     Route::get('admin/register', [RegisteredAdminController::class, 'create'])

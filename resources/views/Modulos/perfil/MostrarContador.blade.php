@@ -15,8 +15,8 @@
         <div class="grid grid-cols-2 p-4">
             <div class="h-screen ml-8">
                 <div class="py-4 text-center">
-                    <h1 class="text-xl my-4">
-                        Contadores
+                    <h1 class="text-3xl font-bold my-4">
+                        Contador 1
                     </h1>
                     <div>
                         <svg width="120" height="130" viewBox="0 0 170 169" fill="none" class="w-full"
@@ -103,76 +103,92 @@
                             </g>
                         </svg>
                     </div>
-
-                    <div class="mt-4 w-full flex justify-center">
-                        <a href="" class="flex">
-                            <svg width="32" height="20" viewBox="0 0 45 39" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0_1317_560" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                    width="45" height="39" >
-                                    <rect y="0.9375" width="44.2022" height="37.1875" fill="#D9D9D9" />
-                                </mask>
-                                <g mask="url(#mask0_1317_560)">
-                                    <path
-                                        d="M20.2594 27.2786H23.9429V21.0806H31.31V17.9817H23.9429V11.7838H20.2594V17.9817H12.8924V21.0806H20.2594V27.2786ZM22.1012 35.026C19.5534 35.026 17.1591 34.6192 14.9183 33.8057C12.6775 32.9923 10.7283 31.8883 9.07074 30.4937C7.41316 29.0992 6.1009 27.4593 5.13398 25.5741C4.16706 23.6889 3.68359 21.6746 3.68359 19.5312C3.68359 17.3877 4.16706 15.3734 5.13398 13.4882C6.1009 11.603 7.41316 9.96314 9.07074 8.5686C10.7283 7.17407 12.6775 6.07007 14.9183 5.25659C17.1591 4.44312 19.5534 4.03638 22.1012 4.03638C24.6489 4.03638 27.0432 4.44312 29.284 5.25659C31.5249 6.07007 33.474 7.17407 35.1316 8.5686C36.7892 9.96314 38.1015 11.603 39.0684 13.4882C40.0353 15.3734 40.5188 17.3877 40.5188 19.5312C40.5188 21.6746 40.0353 23.6889 39.0684 25.5741C38.1015 27.4593 36.7892 29.0992 35.1316 30.4937C33.474 31.8883 31.5249 32.9923 29.284 33.8057C27.0432 34.6192 24.6489 35.026 22.1012 35.026ZM22.1012 31.927C26.2144 31.927 29.6984 30.7262 32.5532 28.3245C35.4079 25.9228 36.8353 22.9917 36.8353 19.5312C36.8353 16.0707 35.4079 13.1396 32.5532 10.7379C29.6984 8.33618 26.2144 7.13534 22.1012 7.13534C17.9879 7.13534 14.5039 8.33618 11.6492 10.7379C8.79448 13.1396 7.36711 16.0707 7.36711 19.5312C7.36711 22.9917 8.79448 25.9228 11.6492 28.3245C14.5039 30.7262 17.9879 31.927 22.1012 31.927Z"
-                                        fill="#585353" />
-                                </g>
+                    <div class="flex justify-center mt-8">
+                        <a href="" class="flex justify-center w-auto h-auto text-md bg-gray-400 text-center hover:bg-gray-500 text-white p-2 rounded-xl">
+                            <svg width="20" height="20" class="mr-2 ml-2" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 40H8.5625L33 15.5625L29.4375 12L5 36.4375V40ZM0 45V34.375L33 1.4375C33.5 0.979167 34.0521 0.625 34.6562 0.375C35.2604 0.125 35.8958 0 36.5625 0C37.2292 0 37.875 0.125 38.5 0.375C39.125 0.625 39.6667 1 40.125 1.5L43.5625 5C44.0625 5.45833 44.4271 6 44.6563 6.625C44.8854 7.25 45 7.875 45 8.5C45 9.16667 44.8854 9.80208 44.6563 10.4062C44.4271 11.0104 44.0625 11.5625 43.5625 12.0625L10.625 45H0ZM31.1875 13.8125L29.4375 12L33 15.5625L31.1875 13.8125Z" fill="#585353"/>
                             </svg>
-                                Agregar Contador
+                            Editar
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-col pt-8 items-center gap-6">
-                    <a href="" class="bg-verdeBotones hover:bg-green-500 text-white text-center h-auto w-1/2 py-2 rounded-xl">Agregar Contador</a>
+                {{-- linea --}}
+                <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
+                <div class="mt-4 w-full flex justify-center">
+                    <a href="" class="flex">
+                        <svg width="30" height="20" viewBox="0 0 45 39" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_1317_560" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="45" height="39" >
+                                <rect y="0.9375" width="44.2022" height="37.1875" fill="#D9D9D9" />
+                            </mask>
+                            <g mask="url(#mask0_1317_560)">
+                                <path
+                                    d="M20.2594 27.2786H23.9429V21.0806H31.31V17.9817H23.9429V11.7838H20.2594V17.9817H12.8924V21.0806H20.2594V27.2786ZM22.1012 35.026C19.5534 35.026 17.1591 34.6192 14.9183 33.8057C12.6775 32.9923 10.7283 31.8883 9.07074 30.4937C7.41316 29.0992 6.1009 27.4593 5.13398 25.5741C4.16706 23.6889 3.68359 21.6746 3.68359 19.5312C3.68359 17.3877 4.16706 15.3734 5.13398 13.4882C6.1009 11.603 7.41316 9.96314 9.07074 8.5686C10.7283 7.17407 12.6775 6.07007 14.9183 5.25659C17.1591 4.44312 19.5534 4.03638 22.1012 4.03638C24.6489 4.03638 27.0432 4.44312 29.284 5.25659C31.5249 6.07007 33.474 7.17407 35.1316 8.5686C36.7892 9.96314 38.1015 11.603 39.0684 13.4882C40.0353 15.3734 40.5188 17.3877 40.5188 19.5312C40.5188 21.6746 40.0353 23.6889 39.0684 25.5741C38.1015 27.4593 36.7892 29.0992 35.1316 30.4937C33.474 31.8883 31.5249 32.9923 29.284 33.8057C27.0432 34.6192 24.6489 35.026 22.1012 35.026ZM22.1012 31.927C26.2144 31.927 29.6984 30.7262 32.5532 28.3245C35.4079 25.9228 36.8353 22.9917 36.8353 19.5312C36.8353 16.0707 35.4079 13.1396 32.5532 10.7379C29.6984 8.33618 26.2144 7.13534 22.1012 7.13534C17.9879 7.13534 14.5039 8.33618 11.6492 10.7379C8.79448 13.1396 7.36711 16.0707 7.36711 19.5312C7.36711 22.9917 8.79448 25.9228 11.6492 28.3245C14.5039 30.7262 17.9879 31.927 22.1012 31.927Z"
+                                    fill="#585353" />
+                            </g>
+                        </svg>
+                            Agregar Notificación
+                    </a>
+                </div>
+
+                <div class="flex flex-col pt-4 items-center gap-6">
                     <a href="" class="bg-gray-400 text-center hover:bg-gray-500 text-white h-auto w-1/2 py-2 rounded-xl">Eliminar Contador</a>
                 </div>
             </div>
-            <div class="flex flex-col h-full">
-                <div class="h-2/6 text-center text-xl">
-                    <h1>Contador Principal</h1>
-                    <h2>Contador 1</h2>
-                    <div class="grid grid-cols-2 p-4">
-                        <div>
-                            <img src="" alt="contador">
-                        </div>
-                        <div>
-                            <h3>Consumo</h3>
-                            <input type="text" class="w-1/4" placeholder="55220">
-                            <h3>Gasto</h3>
-                            <input type="text" class="w-1/4"  placeholder="55220">
-                        </div>
-                    </div>
+
+            {{-- segunda parte donde esta los contadores --}}
+            <div class="flex flex-col h-full p-4">
+                <div class="grid grid-cols-2 p-6 gap-3">
+                    <h2 class="w-auto place-content-center text-md">Número de Contador</h2>
+                    <input class="w-full rounded-lg" type="text">
+                    <h2 class="w-48 place-content-center text-md">Barrio</h2>
+                    <input class="w-full rounded-lg" type="text">
+                    <h2 class="w-48 place-content-center text-md">Dirección</h2>
+                    <input class="w-full rounded-lg" type="text">
+                    <h2 class="w-48 place-content-center text-md">Estrato</h2>
+                    <input class="w-full rounded-lg" type="text">
+
                 </div>
-                <div class="h-1/2 text-center text-xl">
-                    <h2>Contadores Secundarios</h2>
-                    <div class="flex h-full">
-                        <div class="h-full p-4">
-                            <h2>Contador 2</h2>
-                            <div class="grid grid-cols-2">
-                                <div>
-                                    <img src="" alt="contador">
-                                </div>
-                                <div class="text-lg">
-                                    <h3>Consumo</h3>
-                                    <input type="text" class="w-1/2" placeholder="55220">
-                                    <h3>Gasto</h3>
-                                    <input type="text" class="w-1/2"  placeholder="55220">
-                                </div>
-                            </div>
+                <div class="flex gap-4 justify-center py-4">
+                    <h2>Estado:</h2>
+                    <label class="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer">
+                        <div class="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                        <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Activo</span>
+                    </label>
+                </div>
+                <div class="flex h-full p-4 gap-5 justify-center">
+                    <div>
+                        <h3>Consumo m^3</h3>
+                        <input class="w-full rounded-md h-8" type="text">
+                        <h3>Gasto</h3>
+                        <input class="w-full rounded-md h-8" type="text">
+                    </div>
+                    <div class="w-1/2">
+                        <img src="" alt="contador">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex h-6 gap-2">
+                            <svg width="10" height="10" class="h-full w-6 p-2" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z" fill="#FD1B1B"/>
+                            </svg>
+                            <h3 class="">Alerta Alta</h3>
+                            <input class="w-1/4 rounded-lg" type="text">
                         </div>
-                        <div class="p-4">
-                            <h2>Contador 3</h2>
-                            <div class="grid grid-cols-2">
-                                <div>
-                                    <img src="" alt="contador">
-                                </div>
-                                <div class="text-lg">
-                                    <h3>Consumo</h3>
-                                    <input type="text" class="w-1/2" placeholder="55220">
-                                    <h3>Gasto</h3>
-                                    <input type="text" class="w-1/2"  placeholder="55220">
-                                </div>
-                            </div>
+                        <div class="flex h-6 gap-2">
+                            <svg width="10" height="10" class="h-full w-6 p-2" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12.5" cy="13" r="12.5" fill="#FFCC03"/>
+                            </svg>
+                            <h3 class="">Alerta media</h3>
+                            <input class="w-1/4 rounded-lg" type="text">
+                        </div>
+                        <div class="flex h-6 gap-2">
+                            <svg width="10" height="10" class="h-full w-6 p-2" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12.5" cy="12.5" r="12.5" fill="#02BF02"/>
+                            </svg>
+                            <h3 class="">Alerta temprana</h3>
+                            <input class="w-1/4 rounded-lg" type="text">
                         </div>
                     </div>
                 </div>
