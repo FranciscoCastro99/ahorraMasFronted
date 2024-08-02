@@ -30,6 +30,10 @@ Route::get('/user/contador/agregar', [ContadorController::class, 'AgregarIndex']
 Route::get('/user/contador/mostrar', [ContadorController::class, 'MostrarShow'])->name('contador');
 
 
+
+Route::get('/user/daños', [ContadorController::class, 'DañosIndex'])->name('daños');
+
+
 Route::get('/user/historial', [ContadorController::class, 'HistorialIndex'])->name('contador');
 
 Route::get('/user/presupuesto', [ContadorController::class, 'PresupuestoIndex'])->name('contador');

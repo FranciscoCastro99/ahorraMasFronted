@@ -29,4 +29,8 @@ class ContadorController extends Controller
     public function PresupuestoIndex(){
         return view('Modulos.perfil.Presupuesto');
     }
+
+    public function DañosIndex(){
+        return view('Modulos.perfil.Daños');
+    }
 }
