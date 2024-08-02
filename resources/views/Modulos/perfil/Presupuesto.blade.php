@@ -11,7 +11,6 @@
 
 <body>
 
-
     @section('contenido')
         <div class="grid grid-cols-2 p-4 w-full">
             <div class="flex flex-col justify-center p-4">
@@ -24,7 +23,7 @@
                 </span>
             </div>
             <div class="flex place-content-center w-full p-4">
-                <form class="flex flex-col rounded-2xl border-solid border-2 border-black-300 shadow-2xl p-2 w-1/2 place-content-center gap-2 text-sm">
+                <form class="flex flex-col rounded-2xl border-solid gap-4 border-2 border-black-300 shadow-2xl p-2 w-1/2 place-content-center text-sm">
                     <select id="small" class="text-sm pl-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option selected>Elegir Contador</option>
                         <option value="1">1</option>
