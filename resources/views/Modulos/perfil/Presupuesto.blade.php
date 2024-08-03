@@ -24,7 +24,7 @@
             </div>
             <div class="flex place-content-center w-full p-4">
                 <form class="flex flex-col rounded-2xl border-solid gap-4 border-2 border-black-300 shadow-2xl p-2 w-1/2 place-content-center text-sm">
-                    <select id="small" class="text-sm pl-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <select id="contador_id" name="contador_id" class="text-sm pl-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option selected>Elegir Contador</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -34,13 +34,13 @@
                         <option value="6">6</option>
                         </select>
 
-                        <select id="default" class="text-sm pl-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <select id="servicio" name="servicio" class="text-sm pl-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option selected>Tipo de Servicio</option>
                         <option value="anologo">Analógico</option>
                         <option value="digital">Digital</option>
 
                     </select>
-                    <input type="text" class="rounded-xl" placeholder="Valor a Gastar">
+                    <input type="text" name="valor_gasto" class="rounded-xl" placeholder="Valor a Gastar">
 
                     <div class="gap-4 mt-4 w-full text-center">
                         <button type="submit" class="p-2 w-24 rounded-2xl text-white bg-verdeBotones hover:bg-green-700">Calcular</button>

@@ -36,7 +36,7 @@ Route::get('/user/daños', [ContadorController::class, 'DañosIndex'])->name('da
 
 Route::get('/user/historial', [ContadorController::class, 'HistorialIndex'])->name('contador');
 
-Route::get('/user/presupuesto', [ContadorController::class, 'PresupuestoIndex'])->name('contador');
+Route::get('/user/presupuesto', [ContadorController::class, 'PresupuestoIndex'])->name('presupuesto');
 
 
 

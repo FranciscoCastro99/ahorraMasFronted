@@ -3,19 +3,19 @@
     <div class="w-screen h-screen flex">
         <div class="w-1/2 text-center text-xl">
             <h1 class="my-6 font-semibold">Agregar Contador</h1>
+            @csrf
             <form class="max-w-full px-8 flex flex-col text-sm">
                 <div class="flex justify-center gap-4">
-                    <input type="text" class="w-full rounded-xl" placeholder="Número de Contador">
-                    <input type="text" class="w-full rounded-xl" placeholder="Nombre del Contador">
+                    <input type="text" class="w-full rounded-xl" name="num_contador" placeholder="Número de Contador">
+                    <input type="text" class="w-full rounded-xl" name="nombre_contador" placeholder="Nombre del Contador">
                 </div>
-
                 <div class="flex justify-center gap-4 my-4">
-                    <input type="text" class="rounded-xl w-1/2" placeholder="Barrio">
-                    <input type="text" class="rounded-xl w-1/2" placeholder="Dirección">
+                    <input type="text" class="rounded-xl w-1/2" name="barrio" placeholder="Barrio">
+                    <input type="text" class="rounded-xl w-1/2" name="direccion" placeholder="Dirección">
                 </div>
 
                 <div class="flex justify-center gap-4">
-                    <select id="small" class="h-10 w-1/2 text-sm pl-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <select id="estrato" name="estrato" class="h-10 w-1/2 text-sm pl-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option selected>Estrato</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -25,7 +25,7 @@
                         <option value="6">6</option>
                       </select>
 
-                      <select id="default" class="h-10 w-1/2 text-sm pl-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                      <select id="categoria" name="categoria" class="h-10 w-1/2 text-sm pl-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option selected>Categoria</option>
                         <option value="anologo">Analógico</option>
                         <option value="digital">Digital</option>
@@ -34,18 +34,17 @@
                 </div>
 
                 <div class="flex justify-center gap-4 my-4">
-                    <input type="text" class="rounded-xl w-1/2" placeholder="Tarifa Agua">
-                    <input type="text" class="rounded-xl w-1/2" placeholder="Tarifa Alcantarillado">
+                    <input type="text" class="rounded-xl w-1/2" name="tarifa_agua" placeholder="Tarifa Agua">
+                    <input type="text" class="rounded-xl w-1/2" name="tarifa_alcantarillado" placeholder="Tarifa Alcantarillado">
                 </div>
                 <div class="flex justify-center gap-4 mb-4">
-                    <input type="text" class="rounded-xl w-1/2" placeholder="Último Consumo">
-                    <input type="text" class="rounded-xl w-1/2" placeholder="Fecha Próximo Pago">
+                    <input type="text" class="rounded-xl w-1/2" name="ultimo_consumo" placeholder="Último Consumo">
+                    <input type="text" class="rounded-xl w-1/2" name="fecha_proximo_pago" placeholder="Fecha Próximo Pago">
                 </div>
 
                 <div class="justify-center gap-4 mt-4">
                     <button type="submit" class="p-2 w-24 rounded-2xl text-white bg-azulBotones hover:bg-cyan-700">Guardar</button>
                 </div>
-
               </form>
         </div>
 

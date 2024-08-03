@@ -15,7 +15,7 @@
         <div class="grid grid-cols-2 p-4">
             <div class="h-screen ml-8">
                 <div class="py-4 text-center">
-                    <h1 class="text-xl my-4">
+                    <h1 class="text-4xl font-semibold  mb-8">
                         Contadores
                     </h1>
                     <div>
@@ -129,17 +129,17 @@
             </div>
             <div class="flex flex-col h-full bg-gray-600 @yield('contador')">
                 <div class="h-2/6 text-center text-xl">
-                    <h1>Contador Principal</h1>
-                    <h2>Contador 1</h2>
+                    <h1 class="font-semibold text-2xl">Contador Principal</h1>
+                    <h2 class="font-semibold"> Contador: {{ "contador_id" }}</h2>
                     <div class="grid grid-cols-2 p-4">
                         <div>
                             <img src="" alt="contador">
                         </div>
                         <div>
                             <h3>Consumo</h3>
-                            <input type="text" class="w-1/4" placeholder="55220">
+                            <input type="text" name="consumo_m3" class="w-1/4" placeholder="55220">
                             <h3>Gasto</h3>
-                            <input type="text" class="w-1/4"  placeholder="55220">
+                            <input type="text" name="consumo_pesos" class="w-1/4"  placeholder="55220">
                         </div>
                     </div>
                 </div>
