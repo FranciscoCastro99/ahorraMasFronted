@@ -24,19 +24,20 @@ require __DIR__.'/auth.php';
 
 
 
-Route::get('/user', [ContadorController::class, 'UserIndex'])->name('user');
-Route::get('/user/contador', [ContadorController::class, 'ContadorIndex'])->name('contador');
-Route::get('/user/contador/agregar', [ContadorController::class, 'AgregarIndex'])->name('contador');
-Route::get('/user/contador/mostrar', [ContadorController::class, 'MostrarShow'])->name('contador');
+Route::get('/user', [ContadorController::class, 'UserIndex'])->name('perfil.Inicio');
+
+Route::get('/user/contador', [ContadorController::class, 'ContadorIndex'])->name('perfil.Contador');
+Route::get('/user/contador/agregar', [ContadorController::class, 'AgregarIndex'])->name('perfil.Agregar');
+Route::get('/user/contador/mostrar', [ContadorController::class, 'MostrarShow'])->name('perfil.Mostrar');
 
 
 
-Route::get('/user/daños', [ContadorController::class, 'DañosIndex'])->name('daños');
+Route::get('/user/daños', [ContadorController::class, 'DañosIndex'])->name('perfil.Daños');
 
 
-Route::get('/user/historial', [ContadorController::class, 'HistorialIndex'])->name('contador');
+Route::get('/user/historial', [ContadorController::class, 'HistorialIndex'])->name('perfil.Historial');
 
-Route::get('/user/presupuesto', [ContadorController::class, 'PresupuestoIndex'])->name('presupuesto');
+Route::get('/user/presupuesto', [ContadorController::class, 'PresupuestoIndex'])->name('perfil.Presupuesto');
 
 
 

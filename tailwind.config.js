@@ -23,6 +23,8 @@ export default {
         colors:{
             verdeBotones:'#B0D892',
             azulBotones:'#6096BA',
+            azulOscuro: '#134A83',
+            azulCeleste: '#A3CEF1',
         }
     },
 
